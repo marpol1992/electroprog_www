@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta content="text/html;charset=ISO-8859-2" http-equiv="Content-Type"> 
+  <meta name="Description" content="Strona o zainteresowaniach" />
+  <meta name="keywords" content="elektronika, programowanie, survival" />
+  <meta http-equiv="XUA-Compatible"=content"IE=edge,chrome=1"/>
+  <meta name="author"content="Marek Wudarczyk"/>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Elektronika i Programowanie</title> 
+  <script type="text/javascript" src="timer.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+</head>
+
+<body onload="coundown();">
+	<div id="container">
+    
+		<div id="logo">
+			<h1>Elektronika i Programowanie</h1>
+		    
+		</div>
+		
+		<div class="nawigation">
+		<div class="option1"><a href="index.html">Strona Główna</a></div>
+		
+		<div class="option"><a href="kontakt.html">Kontakt</a></div>
+		<div class="option"><a href="omnie.html">O mnie</a></div>
+		<div style="clear:both;"></div> 
+		</div>
+		
+		<div id="menu">
+			<ul>
+			
+			<li><a href="index1.html">Elektronika</a></li>
+			<li><a href="programowanie.html">Programowanie</a></li>
+			<li><a href="survival.html">Survival</a></li>
+			</ul>
+			
+		
+		</div>
+		
+	   
+		
+		<div id="content">
+	
+			<h2> ElectroProg</h2>
+		Witam wszystkich na blogu poświęconemu moim zainteresowaniom: elektronice, programowaniu i przetrwaniu w dziczy :) No tak zadasz sobie pytanie co tu robi kompletnie odmienny
+		sposób spędzania czasu jakim jest Survival. A no tak Survial. Po wielu godzinach przy pisaniu oprogramowania bądź montowaniu nowych układów, przynajmniej ja wariuje i potrzebuje czegoś bardziej żywszego niż przesuwający się kursor. 
+		W niniejszym blogu będę starał się umieszczać ukończone projekty oraz nowe pomysły nad którymi prowadzone są prace. Dzięki takiej formie prezentacji, zamierzam nie tylko innym pomóc w rozwiązywaniu problemów ale także 
+		stworzyć dla siebie samego bazę tematów, które zostały dokonane przeze mnie. Dzięlenie się z innymi swoimi projektami spowoduje, że nie będa się "kurzyć" na dysku i ostatecznie nie pójdą w zapomnienie.</br>
+		</br>
+		W dziale Survival będę umieszczał postawowe informacje odnośnie przetrwania. Będa tam tutoriale obrazujące między innymi w jaki sposób rozpalić ogień z wszech dostępnych materiałów. Zdobywanie pożywienia, budowanie schronienia oraz przygotowanie 
+		prowizorycznej broni, za pomocą której będziemy mogli coś upolować, bądź obronić się przed ludźmi(swoją dziewczyną:) czy dzikim zwierzem.
+		</br>
+		</br>
+		Pragnę nadmienić, że nowym etapem w moim życiu jest nie tylko pisanie bloga ale również kontynuowanie rozbudowy obecnej strony internetowej której programowania uczę się od niedawna. Dlatego wszelkie uwagi śmiało prosze kierować osobiście do mnie.
+		</br>
+		</br>
+		Pozdrawiam,
+		</br>
+		</br>
+		Marek :)
+		</div>
+		
+		<div id="content_1">
+			<div id="time">
+			</div>
+			<div class="socialdivs">
+					<div class="yt"><a href="https://www.youtube.com/channel/UCTqTetCp1DPlTSJgTQuE4jQ" target=" new_blank"><i class="icon-youtube"></i></div>
+					<div class="gplus"><a href="https://plus.google.com/u/0/109298649666630905722/posts" target=" new_blank"><i class="icon-gplus"></i></div>
+					<div class="fb"><a href="https://www.facebook.com/marek.wudarczyk" target=" new_blank"><i class="icon-facebook"></i></a></div>
+				</div>
+				
+			
+		</div>
+		
+	
+		<div id="footer">
+	
+			ElectroProg 2016 &copy; Wszelkie prawa zastrzeżone 
+	
+		</div>
+	
+	
+	</div>
+	
+<script src="jquery-1.11.3.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nawigation').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nawigation').addClass('sticky');
+	} else {
+		$('.nawigation').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+
+</body>
+</html>
